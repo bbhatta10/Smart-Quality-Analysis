@@ -157,3 +157,156 @@ with tab3:
 # ============================================================
 st.markdown("---")
 st.caption("© 2025 Smart Quality Control Dashboard | Built with Streamlit + Plotly")
+
+
+#####################
+# ===============================
+# 📘 Model 2: Severity Prediction
+# ===============================
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+
+# Step 1️⃣: Filter rows with actual defects
+df_severe = df_clean[df_clean['has_defect'] == 1].copy()
+
+# Step 2️⃣: Create binary severity target (1 = severe defect)
+df_severe['is_severe'] = (df_severe['defect_severity'] >= 2).astype(int)
+
+# Check distribution
+print("Value counts for is_severe:")
+print(df_severe['is_severe'].value_counts())
+
+# Step 3️⃣: Choose features (you can adjust these)
+features = [
+    'quality_score', 'defect_count', 'prod_hour',
+    'inspection_delay', 'shift', 'factory_location'
+]
+
+# Encode categorical columns
+df_encoded = pd.get_dummies(df_severe[features], drop_first=True)
+
+# Step 4️⃣: Split data into train/test sets
+X_train, X_test, y_train, y_test = train_test_split(
+    df_encoded, df_severe['is_severe'], test_size=0.2, random_state=42
+)
+
+# Step 5️⃣: Train Random Forest model
+model = RandomForestClassifier(random_state=42)
+model.fit(X_train, y_train)
+
+# Step 6️⃣: Evaluate performance
+y_pred = model.predict(X_test)
+print("\n✅ Severity Model Performance:")
+print(classification_report(y_test, y_pred))
+print("Accuracy:", round(accuracy_score(y_test, y_pred) * 100, 2), "%")
+print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+
+y_pred = model.predict(X_test)
+print("\n✅ Model Evaluation:")
+print(classification_report(y_test, y_pred))
+
+# Step 7️⃣: Save predictions for Tableau visualization
+df_severe.loc[X_test.index, 'predicted_severe'] = y_pred
+df_severe[['inspection_id', 'defect_severity', 'is_severe', 'predicted_severe']].to_csv(
+    "severity_predictions_for_tableau.csv", index=False
+)
+
+print("\n📂 File saved: severity_predictions_for_tableau.csv")
+# ===============================
+
+
+
+# ========================================
+# 📘 Model 3: Quality Score Prediction
+# ========================================
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+
+# Step 1️⃣: Prepare the dataset
+df_quality = df_clean.copy()
+
+# Drop rows with missing quality_score (if any)
+df_quality = df_quality.dropna(subset=['quality_score'])
+
+# Step 2️⃣: Choose features that may influence quality
+features = [
+    'defect_count', 'defect_severity', 'inspection_delay',
+    'prod_hour', 'shift', 'operator_id', 'factory_location'
+]
+
+# Step 3️⃣: Encode categorical features
+df_encoded = pd.get_dummies(df_quality[features], drop_first=True)
+
+# Step 4️⃣: Define target variable
+target = df_quality['quality_score']
+
+# Step 5️⃣: Split dataset into training and testing
+X_train, X_test, y_train, y_test = train_test_split(
+    df_encoded, target, test_size=0.2, random_state=42
+)
+
+# Step 6️⃣: Train the model
+model = RandomForestRegressor(random_state=42, n_estimators=200)
+model.fit(X_train, y_train)
+
+# Step 7️⃣: Make predictions
+y_pred = model.predict(X_test)
+
+# Step 8️⃣: Evaluate performance
+mae = mean_absolute_error(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred)
+rmse = np.sqrt(mse)
+r2 = r2_score(y_test, y_pred)
+
+print("\n✅ Quality Score Model Performance:")
+print(f"MAE  (Mean Absolute Error): {mae:.2f}")
+print(f"RMSE (Root Mean Squared Error): {rmse:.2f}")
+print(f"R²   (Model Fit): {r2:.3f}")
+
+# Step 9️⃣: Save predictions for Tableau
+df_quality.loc[X_test.index, 'predicted_quality_score'] = y_pred
+df_quality[['inspection_id', 'quality_score', 'predicted_quality_score']].to_csv(
+    "quality_predictions_for_tableau.csv", index=False
+)
+
+print("\n📂 File saved: quality_predictions_for_tableau.csv")
+# ================================
+
+
+# ================================================
+# 📊 Feature Importance (after training the model)
+# ================================================
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Get feature importances from Random Forest
+feature_importances = pd.DataFrame({
+    'Feature': X_train.columns,
+    'Importance': model.feature_importances_
+}).sort_values(by='Importance', ascending=False)
+
+# Display top features in console
+print("\n🔥 Top 10 Most Important Features Driving Quality:")
+print(feature_importances.head(10))
+
+# Save feature importance for Tableau
+feature_importances.to_csv("quality_feature_importance_for_tableau.csv", index=False)
+print("\n📂 File saved: quality_feature_importance_for_tableau.csv")
+
+# Optional: Visualize feature importance directly in Python
+plt.figure(figsize=(10, 6))
+sns.barplot(data=feature_importances.head(10), x='Importance', y='Feature')
+plt.title("Top 10 Factors Affecting Quality Score")
+plt.xlabel("Feature Importance")
+plt.ylabel("Feature")
+plt.tight_layout()
+plt.show()
+# ================================

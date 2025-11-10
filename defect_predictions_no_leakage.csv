@@ -1,0 +1,201 @@
+batch_id,production_date,product_code,shift,operator_id,inspection_id,inspection_date,inspector_id,quality_score,defect_type,defect_severity,defect_count,rework_required,comments,factory_location,prod_date,prod_hour,prod_weekday,inspection_delay,is_severe,has_defect,predicted_defect_prob
+A1234-20240601,2024-06-01,PRD-02,afternoon,OP-5691,INSP-0001,2024-06-01 15:22:17,INS-2231,99.7,0,0.0,0,False,No issues detected. Batch meets all quality benchmarks.,Factory-E1,2024-06-01,0,Saturday,0,0,0,0.125
+B0876-20240602,2024-06-02,PRD-03,morning,OP-1674,INSP-0002,2024-06-02 09:18:43,INS-9052,87.4,0,0.0,0,False,Perfect batch. No defects observed.,Factory-Y7,2024-06-02,0,Sunday,0,0,0,0.065
+C4218-20240603,2024-06-03,PRD-01,night,OP-2517,INSP-0003,2024-06-04 00:43:11,INS-0342,81.1,scratch,1.0,1,False,Minor scratch detected but within tolerance.,Factory-Z3,2024-06-03,0,Monday,1,0,1,0.925
+D3127-20240603,2024-06-03,PRD-04,afternoon,OP-0033,INSP-0004,2024-06-03 16:08:29,INS-5961,94.3,0,0.0,0,False,Batch exceeded benchmarks.,Factory-X0,2024-06-03,0,Monday,0,0,0,0.03
+E2098-20240604,2024-06-04,PRD-02,morning,OP-5691,INSP-0005,2024-06-04 08:42:14,INS-9052,77.8,marking,2.0,2,False,Spot marking observed. No rework required.,Factory-G9,2024-06-04,0,Tuesday,0,0,1,0.76
+F5921-20240605,2024-06-05,PRD-03,afternoon,OP-7777,INSP-0006,2024-06-05 15:17:05,INS-2178,61.4,misalignment,3.0,7,True,Batch failed due to misalignment. Requires full rework.,Factory-A2,2024-06-05,0,Wednesday,0,0,1,0.89
+G7423-20240606,2024-06-06,PRD-02,night,OP-0033,INSP-0007,2024-06-07 01:02:39,INS-0342,59.2,contamination,3.0,5,True,Contamination detected. Rework required.,Factory-X0,2024-06-06,0,Thursday,1,0,1,0.9691666666666667
+H9305-20240607,2024-06-07,PRD-04,morning,OP-4178,INSP-0008,2024-06-07 10:40:15,INS-2231,69.8,mislabel,2.0,3,True,"Mislabel found, batch flagged for rework.",Factory-Y7,2024-06-07,0,Friday,0,0,1,0.675
+J4207-20240608,2024-06-08,PRD-01,afternoon,OP-2517,INSP-0009,2024-06-08 14:55:21,INS-9052,100.0,0,0.0,0,False,No defects. Outstanding product.,Factory-A2,2024-06-08,0,Saturday,0,0,0,0.245
+K5182-20240609,2024-06-09,PRD-02,night,OP-2517,INSP-0010,2024-06-10 00:31:46,INS-0342,3.2,major_crack,4.0,17,True,Complete failure. Batch must be discarded.,Factory-E1,2024-06-09,0,Sunday,1,0,1,0.8
+L1096-20240610,2024-06-10,PRD-03,afternoon,OP-0033,INSP-0011,2024-06-10 16:11:34,INS-2178,93.8,0,0.0,0,False,Outstanding batch. No deviations.,Factory-G9,2024-06-10,0,Monday,0,0,0,0.12208333333333332
+M8315-20240611,2024-06-11,PRD-04,morning,OP-5691,INSP-0012,2024-06-11 11:23:47,INS-2231,85.0,0,0.0,0,False,Batch passed all tests.,Factory-Y7,2024-06-11,0,Tuesday,0,0,0,0.035
+N5012-20240612,2024-06-12,PRD-01,afternoon,OP-2186,INSP-0013,2024-06-12 15:03:58,INS-9052,76.4,dent,2.0,1,False,"Minor dent observed, no impact on function.",Factory-G9,2024-06-12,0,Wednesday,0,0,1,0.97
+O1238-20240613,2024-06-13,PRD-02,night,OP-2517,INSP-0014,2024-06-14 02:12:38,INS-0342,41.9,cracking,4.0,15,True,"Cracking detected, batch failed.",Factory-Z3,2024-06-13,0,Thursday,1,0,1,0.92
+P8762-20240614,2024-06-14,PRD-03,morning,OP-0112,INSP-0015,2024-06-14 09:36:51,INS-5961,98.2,0,0.0,0,False,No issues detected.,Factory-X0,2024-06-14,0,Friday,0,0,0,0.07
+Q2110-20240615,2024-06-15,PRD-01,afternoon,OP-3452,INSP-0016,2024-06-15 16:21:07,INS-9052,72.0,discoloration,1.0,1,False,Minor discoloration. Within acceptable limits.,Factory-G9,2024-06-15,0,Saturday,0,0,1,0.3883333333333333
+R5203-20240616,2024-06-16,PRD-02,night,OP-2186,INSP-0017,2024-06-17 01:19:53,INS-0342,69.5,contamination,3.0,8,True,Contamination. Full rework required.,Factory-A2,2024-06-16,0,Sunday,1,0,1,0.96
+S1542-20240617,2024-06-17,PRD-04,afternoon,OP-0033,INSP-0018,2024-06-17 15:46:39,INS-2178,100.0,0,0.0,0,False,No defects found. Exceptional quality.,Factory-G9,2024-06-17,0,Monday,0,0,0,0.08
+T7612-20240618,2024-06-18,PRD-03,morning,OP-4178,INSP-0019,2024-06-18 10:15:04,INS-5961,99.9,0,0.0,0,False,Batch meets highest standards.,Factory-Y7,2024-06-18,0,Tuesday,0,0,0,0.14
+U6045-20240619,2024-06-19,PRD-01,afternoon,OP-0001,INSP-0020,2024-06-19 15:02:12,INS-2231,82.3,scratch,1.0,2,False,"Light scratch detected, no action needed.",Factory-E1,2024-06-19,0,Wednesday,0,0,1,0.8340000000000001
+V2354-20240620,2024-06-20,PRD-02,night,OP-2186,INSP-0021,2024-06-21 03:00:59,INS-0342,49.7,misalignment,4.0,6,True,Severe misalignment. Batch failed.,Factory-X0,2024-06-20,0,Thursday,1,0,1,0.975
+W3819-20240621,2024-06-21,PRD-03,afternoon,OP-5691,INSP-0022,2024-06-21 14:44:28,INS-2178,100.0,0,0.0,0,False,"Outstanding batch, no defects.",Factory-A2,2024-06-21,0,Friday,0,0,0,0.155
+X6210-20240622,2024-06-22,PRD-01,morning,OP-2517,INSP-0023,2024-06-22 09:59:01,INS-9052,79.8,marking,2.0,1,False,"Marking noted, within tolerance.",Factory-Z3,2024-06-22,0,Saturday,0,0,1,0.81
+Y9027-20240623,2024-06-23,PRD-02,afternoon,OP-0033,INSP-0024,2024-06-23 14:33:56,INS-2178,85.7,0,0.0,0,False,Batch passed inspection.,Factory-G9,2024-06-23,0,Sunday,0,0,0,0.2329166666666667
+Z4172-20240624,2024-06-24,PRD-03,night,OP-0112,INSP-0025,2024-06-25 01:17:31,INS-9052,63.8,contamination,3.0,4,True,Batch flagged for rework due to contamination.,Factory-Y7,2024-06-24,0,Monday,1,0,1,0.9
+A8015-20240625,2024-06-25,PRD-04,morning,OP-5691,INSP-0026,2024-06-25 11:04:24,INS-2231,89.5,0,0.0,0,False,Batch meets all required specs.,Factory-X0,2024-06-25,0,Tuesday,0,0,0,0.225
+B4002-20240626,2024-06-26,PRD-01,afternoon,OP-2186,INSP-0027,2024-06-26 15:57:09,INS-9052,75.3,dent,1.0,1,False,"Minor dent found, no further action.",Factory-E1,2024-06-26,0,Wednesday,0,0,1,0.925
+C0281-20240627,2024-06-27,PRD-02,night,OP-3452,INSP-0028,2024-06-28 00:27:17,INS-0342,57.9,cracking,3.0,9,True,Cracking detected. Full rework necessary.,Factory-A2,2024-06-27,0,Thursday,1,0,1,0.865
+D7723-20240628,2024-06-28,PRD-03,morning,OP-4178,INSP-0029,2024-06-28 10:27:13,INS-5961,100.0,0,0.0,0,False,Batch received perfect rating.,Factory-Z3,2024-06-28,0,Friday,0,0,0,0.1
+E5631-20240629,2024-06-29,PRD-04,afternoon,OP-0033,INSP-0030,2024-06-29 16:36:21,INS-2178,88.5,0,0.0,0,False,No issues detected.,Factory-Y7,2024-06-29,0,Saturday,0,0,0,0.05
+F3812-20240630,2024-06-30,PRD-01,night,OP-2517,INSP-0031,2024-07-01 02:37:55,INS-0342,0.0,major_crack,4.0,19,True,Complete failure. Batch rejected.,Factory-G9,2024-06-30,0,Sunday,1,0,1,0.635
+G9028-20240520,2024-05-20,PRD-02,morning,OP-2186,INSP-0032,2024-05-20 09:07:01,INS-9052,97.6,0,0.0,0,False,No defects found.,Factory-E1,2024-05-20,0,Monday,0,0,0,0.055
+H7213-20240521,2024-05-21,PRD-03,afternoon,OP-0033,INSP-0033,2024-05-21 16:12:05,INS-2178,84.1,0,0.0,0,False,Batch meets all requirements.,Factory-X0,2024-05-21,0,Tuesday,0,0,0,0.335
+J8123-20240522,2024-05-22,PRD-04,night,OP-4178,INSP-0034,2024-05-23 00:45:37,INS-0342,66.5,mislabel,3.0,4,True,"Mislabel found, rework required.",Factory-Y7,2024-05-22,0,Wednesday,1,0,1,0.915
+K9134-20240523,2024-05-23,PRD-02,morning,OP-5691,INSP-0035,2024-05-23 08:31:46,INS-9052,91.7,0,0.0,0,False,No deviations detected.,Factory-G9,2024-05-23,0,Thursday,0,0,0,0.2
+L5812-20240524,2024-05-24,PRD-01,afternoon,OP-0112,INSP-0036,2024-05-24 14:10:09,INS-2178,74.9,scratch,2.0,2,False,"Minor scratch detected, no rework needed.",Factory-A2,2024-05-24,0,Friday,0,0,1,0.9266666666666665
+M6718-20240525,2024-05-25,PRD-03,night,OP-2517,INSP-0037,2024-05-26 01:16:27,INS-0342,55.2,cracking,3.0,5,True,Cracking observed. Batch flagged for rework.,Factory-Z3,2024-05-25,0,Saturday,1,0,1,1.0
+N1829-20240526,2024-05-26,PRD-04,morning,OP-5691,INSP-0038,2024-05-26 10:06:53,INS-2231,98.7,0,0.0,0,False,Batch meets all standards.,Factory-Y7,2024-05-26,0,Sunday,0,0,0,0.04
+O3992-20240527,2024-05-27,PRD-01,afternoon,OP-0001,INSP-0039,2024-05-27 15:35:11,INS-9052,76.1,discoloration,2.0,2,False,Discoloration within acceptable range.,Factory-G9,2024-05-27,0,Monday,0,0,1,0.47074999999999995
+P4728-20240528,2024-05-28,PRD-02,night,OP-3452,INSP-0040,2024-05-29 02:55:43,INS-0342,45.8,misalignment,4.0,10,True,"Misalignment detected, batch failed.",Factory-X0,2024-05-28,0,Tuesday,1,0,1,0.925
+Q3291-20240529,2024-05-29,PRD-03,morning,OP-4178,INSP-0041,2024-05-29 08:30:17,INS-5961,100.0,0,0.0,0,False,Batch scored 100. No defects.,Factory-A2,2024-05-29,0,Wednesday,0,0,0,0.145
+R8092-20240530,2024-05-30,PRD-01,afternoon,OP-2186,INSP-0042,2024-05-30 16:01:33,INS-9052,73.2,marking,2.0,2,False,"Marking found, no functional impact.",Factory-Z3,2024-05-30,0,Thursday,0,0,1,0.925
+S4923-20240531,2024-05-31,PRD-02,night,OP-0033,INSP-0043,2024-06-01 00:57:28,INS-0342,40.2,cracking,4.0,16,True,Significant cracking. Batch must be reworked.,Factory-X0,2024-05-31,0,Friday,1,0,1,0.89
+T1809-20240515,2024-05-15,PRD-04,morning,OP-5691,INSP-0044,2024-05-15 10:18:09,INS-2231,99.2,0,0.0,0,False,Batch meets all benchmarks.,Factory-Y7,2024-05-15,0,Wednesday,0,0,0,0.055
+U1203-20240101,2024-01-01,PRD-01,afternoon,OP-0001,INSP-0045,2024-01-01 14:29:15,INS-9052,100.0,0,0.0,0,False,First batch of the year. No issues.,Factory-G9,2024-01-01,0,Monday,0,0,0,0.47074999999999995
+V3812-20230228,2023-02-28,PRD-02,night,OP-2186,INSP-0046,2023-03-01 01:18:49,INS-0342,0.0,major_crack,4.0,20,True,Old batch. Catastrophic failure.,Factory-E1,2023-02-28,0,Tuesday,1,0,1,0.935
+W7281-20240503,2024-05-03,PRD-03,morning,OP-2517,INSP-0047,2024-05-03 08:46:22,INS-9052,99.6,0,0.0,0,False,Outstanding batch.,Factory-X0,2024-05-03,0,Friday,0,0,0,0.095
+X2019-20240504,2024-05-04,PRD-04,afternoon,OP-0033,INSP-0048,2024-05-04 14:31:01,INS-2178,83.0,0,0.0,0,False,No defects detected.,Factory-Y7,2024-05-04,0,Saturday,0,0,0,0.05
+Y8129-20240505,2024-05-05,PRD-01,night,OP-4178,INSP-0049,2024-05-06 00:10:04,INS-0342,58.6,contamination,3.0,5,True,"Contamination identified, batch failed.",Factory-Z3,2024-05-05,0,Sunday,1,0,1,0.985
+Z6213-20240506,2024-05-06,PRD-02,afternoon,OP-5691,INSP-0050,2024-05-06 15:20:38,INS-9052,89.9,0,0.0,0,False,Batch meets all standards.,Factory-A2,2024-05-06,0,Monday,0,0,0,0.065
+A1201-20240601,2024-06-01,PRD-01,morning,OP-0033,INSP-20001,2024-06-01 09:23:00,INS-1001,99.5,0,0.0,0,False,Batch exceeded quality benchmarks. No issues detected.,Factory-E1,2024-06-01,0,Saturday,0,0,0,0.11083333333333334
+B2085-20240601,2024-06-01,PRD-02,afternoon,OP-2186,INSP-20002,2024-06-01 15:34:00,INS-1002,83.7,scratch,1.0,1,False,"Minor scratch noted, within tolerance levels.",Factory-A2,2024-06-01,0,Saturday,0,0,1,0.89
+C3167-20240601,2024-06-01,PRD-03,night,OP-5691,INSP-20003,2024-06-02 00:45:00,INS-1003,67.4,misalignment,3.0,5,True,Batch failed due to misalignment. Requires rework.,Factory-Z3,2024-06-01,0,Saturday,1,0,1,0.99
+D4226-20240601,2024-06-01,PRD-04,morning,OP-0112,INSP-20004,2024-06-01 10:12:00,INS-1004,97.2,0,0.0,0,False,No defects found. Batch meets all specifications.,Factory-Y7,2024-06-01,0,Saturday,0,0,0,0.015
+E5016-20240602,2024-06-02,PRD-01,afternoon,OP-0033,INSP-20005,2024-06-02 14:19:00,INS-1001,89.1,0,0.0,0,False,Batch inspected with no issues detected.,Factory-E1,2024-06-02,0,Sunday,0,0,0,0.18875
+F6983-20240602,2024-06-02,PRD-02,night,OP-2517,INSP-20006,2024-06-03 01:03:00,INS-1005,49.8,contamination,4.0,8,True,High contamination detected. Full rework required.,Factory-X0,2024-06-02,0,Sunday,1,0,1,0.875
+G8092-20240602,2024-06-02,PRD-03,morning,OP-4178,INSP-20007,2024-06-02 08:55:00,INS-1006,100.0,0,0.0,0,False,Perfect batch. No issues found.,Factory-G9,2024-06-02,0,Sunday,0,0,0,0.085
+H9021-20240603,2024-06-03,PRD-04,afternoon,OP-0001,INSP-20008,2024-06-03 16:10:00,INS-1002,79.4,marking,2.0,2,False,Spot marking observed; batch still passes inspection.,Factory-A2,2024-06-03,0,Monday,0,0,1,0.8
+I1023-20240603,2024-06-03,PRD-01,night,OP-5691,INSP-20009,2024-06-04 01:44:00,INS-1007,61.2,cracking,3.0,4,True,Cracking detected; batch failed and requires rework.,Factory-Z3,2024-06-03,0,Monday,1,0,1,0.975
+J2039-20240603,2024-06-03,PRD-02,morning,OP-1674,INSP-20010,2024-06-03 11:27:00,INS-1004,98.8,0,0.0,0,False,Inspection passed with no issues.,Factory-E1,2024-06-03,0,Monday,0,0,0,0.025
+K3047-20240604,2024-06-04,PRD-03,afternoon,OP-0033,INSP-20011,2024-06-04 15:48:00,INS-1002,77.9,dent,1.0,2,False,"Minor dent observed, within acceptable range.",Factory-Y7,2024-06-04,0,Tuesday,0,0,1,0.48
+L4092-20240604,2024-06-04,PRD-04,night,OP-4178,INSP-20012,2024-06-05 02:09:00,INS-1008,40.7,mislabel,4.0,10,True,Mislabel detected; batch failed and requires rework.,Factory-G9,2024-06-04,0,Tuesday,1,0,1,0.985
+M5001-20240604,2024-06-04,PRD-01,morning,OP-2517,INSP-20013,2024-06-04 08:31:00,INS-1009,92.3,0,0.0,0,False,Batch meets all production standards.,Factory-E1,2024-06-04,0,Tuesday,0,0,0,0.075
+N6017-20240605,2024-06-05,PRD-02,afternoon,OP-0033,INSP-20014,2024-06-05 16:51:00,INS-1003,80.5,discoloration,2.0,2,False,Minor discoloration within tolerance. Batch passes.,Factory-A2,2024-06-05,0,Wednesday,0,0,1,0.845
+O7023-20240605,2024-06-05,PRD-03,night,OP-5691,INSP-20015,2024-06-06 00:14:00,INS-1005,65.1,misalignment,3.0,6,True,Batch failed due to misalignment issues. Rework required.,Factory-Z3,2024-06-05,0,Wednesday,1,0,1,0.94
+P8039-20240605,2024-06-05,PRD-04,morning,OP-7777,INSP-20016,2024-06-05 09:14:00,INS-1006,99.8,0,0.0,0,False,No issues detected during inspection.,Factory-Y7,2024-06-05,0,Wednesday,0,0,0,0.045
+Q9048-20240606,2024-06-06,PRD-01,afternoon,OP-0112,INSP-20017,2024-06-06 14:55:00,INS-1001,76.3,marking,1.0,2,False,"Spot marking observed, batch still passes inspection.",Factory-E1,2024-06-06,0,Thursday,0,0,1,0.5925
+R1002-20240606,2024-06-06,PRD-02,night,OP-2517,INSP-20018,2024-06-07 01:12:00,INS-1002,55.2,contamination,4.0,7,True,Batch failed due to contamination. Requires full rework.,Factory-X0,2024-06-06,0,Thursday,1,0,1,0.7
+S2098-20240606,2024-06-06,PRD-03,morning,OP-4178,INSP-20019,2024-06-06 10:44:00,INS-1004,96.1,0,0.0,0,False,Batch inspected. No defects found.,Factory-G9,2024-06-06,0,Thursday,0,0,0,0.15
+T3201-20240607,2024-06-07,PRD-04,afternoon,OP-0033,INSP-20020,2024-06-07 16:02:00,INS-1005,72.5,foreign_object,2.0,2,False,Foreign object detected but within tolerance.,Factory-A2,2024-06-07,0,Friday,0,0,1,0.735
+U4016-20240607,2024-06-07,PRD-01,night,OP-5691,INSP-20021,2024-06-08 00:29:00,INS-1006,8.2,major_crack,4.0,19,True,Complete failure. Batch must be discarded.,Factory-Z3,2024-06-07,0,Friday,1,0,1,0.92
+V5092-20240607,2024-06-07,PRD-02,morning,OP-0001,INSP-20022,2024-06-07 09:07:00,INS-1007,95.7,0,0.0,0,False,Batch meets all specifications. No defects.,Factory-E1,2024-06-07,0,Friday,0,0,0,0.10583333333333333
+W6091-20240608,2024-06-08,PRD-03,afternoon,OP-0033,INSP-20023,2024-06-08 15:29:00,INS-1008,78.4,dent,1.0,1,False,"Minor dent detected, batch passes inspection.",Factory-Y7,2024-06-08,0,Saturday,0,0,1,0.755
+X7028-20240608,2024-06-08,PRD-04,night,OP-4178,INSP-20024,2024-06-09 02:55:00,INS-1009,41.5,cracking,4.0,12,True,Cracking detected. Batch failed and requires rework.,Factory-G9,2024-06-08,0,Saturday,1,0,1,0.955
+Y8096-20240608,2024-06-08,PRD-01,morning,OP-2517,INSP-20025,2024-06-08 11:46:00,INS-1001,100.0,0,0.0,0,False,Batch is flawless. No issues detected.,Factory-E1,2024-06-08,0,Saturday,0,0,0,0.06
+Z9042-20240609,2024-06-09,PRD-02,afternoon,OP-0033,INSP-20026,2024-06-09 16:44:00,INS-1002,77.3,scratch,1.0,1,False,"Minor scratch detected, within tolerance.",Factory-A2,2024-06-09,0,Sunday,0,0,1,0.77
+A1029-20240609,2024-06-09,PRD-03,night,OP-5691,INSP-20027,2024-06-10 00:58:00,INS-1003,62.6,cracking,3.0,5,True,Cracking present. Batch failed and needs rework.,Factory-Z3,2024-06-09,0,Sunday,1,0,1,0.995
+B2018-20240609,2024-06-09,PRD-04,morning,OP-0112,INSP-20028,2024-06-09 08:18:00,INS-1004,95.8,0,0.0,0,False,Inspection passed; no defects found.,Factory-Y7,2024-06-09,0,Sunday,0,0,0,0.02
+C3024-20240610,2024-06-10,PRD-01,afternoon,OP-7777,INSP-20029,2024-06-10 15:41:00,INS-1005,74.2,discoloration,2.0,2,False,"Minor discoloration detected, batch passes.",Factory-A2,2024-06-10,0,Monday,0,0,1,0.5625
+D4041-20240610,2024-06-10,PRD-02,night,OP-2517,INSP-20030,2024-06-11 02:06:00,INS-1006,51.4,contamination,4.0,9,True,Batch failed due to contamination. Full rework required.,Factory-X0,2024-06-10,0,Monday,1,0,1,0.94
+E5093-20240610,2024-06-10,PRD-03,morning,OP-4178,INSP-20031,2024-06-10 10:56:00,INS-1007,99.6,0,0.0,0,False,Batch meets highest quality standards.,Factory-G9,2024-06-10,0,Monday,0,0,0,0.035
+F6017-20240611,2024-06-11,PRD-04,afternoon,OP-0033,INSP-20032,2024-06-11 14:22:00,INS-1002,82.1,scratch,1.0,1,False,"Minor scratch detected, batch passes.",Factory-A2,2024-06-11,0,Tuesday,0,0,1,0.825
+G7098-20240611,2024-06-11,PRD-01,night,OP-5691,INSP-20033,2024-06-12 01:21:00,INS-1003,44.9,cracking,4.0,11,True,Significant cracking detected. Batch failed.,Factory-Z3,2024-06-11,0,Tuesday,1,0,1,0.72
+H8092-20240611,2024-06-11,PRD-02,morning,OP-0001,INSP-20034,2024-06-11 10:13:00,INS-1004,97.4,0,0.0,0,False,Batch passed inspection. No defects found.,Factory-E1,2024-06-11,0,Tuesday,0,0,0,0.19
+I9027-20240612,2024-06-12,PRD-03,afternoon,OP-7777,INSP-20035,2024-06-12 15:34:00,INS-1005,75.8,foreign_object,2.0,2,False,"Foreign object detected, batch passes.",Factory-A2,2024-06-12,0,Wednesday,0,0,1,0.89
+J1003-20240612,2024-06-12,PRD-04,night,OP-2517,INSP-20036,2024-06-13 02:18:00,INS-1006,59.5,mislabel,3.0,7,True,Mislabeling detected. Batch failed and full rework needed.,Factory-G9,2024-06-12,0,Wednesday,1,0,1,0.99
+K2019-20240612,2024-06-12,PRD-01,morning,OP-4178,INSP-20037,2024-06-12 09:28:00,INS-1007,100.0,0,0.0,0,False,Batch is flawless. No issues found.,Factory-E1,2024-06-12,0,Wednesday,0,0,0,0.06
+L3098-20240613,2024-06-13,PRD-02,afternoon,OP-0033,INSP-20038,2024-06-13 16:53:00,INS-1002,81.6,scratch,1.0,1,False,"Minor scratch detected, batch passes.",Factory-A2,2024-06-13,0,Thursday,0,0,1,0.845
+M4027-20240613,2024-06-13,PRD-03,night,OP-5691,INSP-20039,2024-06-14 02:28:00,INS-1003,68.2,misalignment,3.0,6,True,Misalignment detected. Batch failed and requires rework.,Factory-Z3,2024-06-13,0,Thursday,1,0,1,0.985
+N5038-20240613,2024-06-13,PRD-04,morning,OP-2517,INSP-20040,2024-06-13 11:10:00,INS-1004,95.9,0,0.0,0,False,No defects found. Batch passes inspection.,Factory-Y7,2024-06-13,0,Thursday,0,0,0,0.07
+O6017-20240614,2024-06-14,PRD-01,afternoon,OP-0033,INSP-20041,2024-06-14 15:46:00,INS-1005,73.6,discoloration,2.0,2,False,"Minor discoloration detected, batch passes.",Factory-A2,2024-06-14,0,Friday,0,0,1,0.9483333333333333
+P7015-20240614,2024-06-14,PRD-02,night,OP-2517,INSP-20042,2024-06-15 01:33:00,INS-1006,49.2,contamination,4.0,8,True,Batch failed due to contamination. Full rework required.,Factory-X0,2024-06-14,0,Friday,1,0,1,0.95
+Q8082-20240614,2024-06-14,PRD-03,morning,OP-4178,INSP-20043,2024-06-14 11:52:00,INS-1007,98.9,0,0.0,0,False,Batch flawless. No issues found.,Factory-G9,2024-06-14,0,Friday,0,0,0,0.07
+R9039-20240615,2024-06-15,PRD-04,afternoon,OP-0033,INSP-20044,2024-06-15 14:21:00,INS-1002,80.6,scratch,1.0,1,False,"Minor scratch detected, batch passes.",Factory-A2,2024-06-15,0,Saturday,0,0,1,0.705
+S1058-20240615,2024-06-15,PRD-01,night,OP-5691,INSP-20045,2024-06-16 00:19:00,INS-1003,10.3,major_crack,4.0,18,True,Critical major crack detected. Batch discarded.,Factory-Z3,2024-06-15,0,Saturday,1,0,1,0.99
+T2064-20240615,2024-06-15,PRD-02,morning,OP-0001,INSP-20046,2024-06-15 09:58:00,INS-1004,96.6,0,0.0,0,False,Batch meets all specifications. No defects.,Factory-E1,2024-06-15,0,Saturday,0,0,0,0.13499999999999998
+U3078-20240616,2024-06-16,PRD-03,afternoon,OP-7777,INSP-20047,2024-06-16 16:02:00,INS-1005,77.7,foreign_object,2.0,2,False,Foreign object found. Batch passes inspection.,Factory-A2,2024-06-16,0,Sunday,0,0,1,0.9
+V4089-20240616,2024-06-16,PRD-04,night,OP-2517,INSP-20048,2024-06-17 02:18:00,INS-1006,52.7,mislabel,3.0,7,True,"Mislabel detected, batch failed and rework needed.",Factory-G9,2024-06-16,0,Sunday,1,0,1,0.94
+W5097-20240616,2024-06-16,PRD-01,morning,OP-4178,INSP-20049,2024-06-16 08:26:00,INS-1007,100.0,0,0.0,0,False,Batch flawless. No issues detected.,Factory-E1,2024-06-16,0,Sunday,0,0,0,0.1
+X6013-20240617,2024-06-17,PRD-02,afternoon,OP-0033,INSP-20050,2024-06-17 16:41:00,INS-1002,79.8,scratch,1.0,1,False,Minor scratch detected. Batch passes.,Factory-A2,2024-06-17,0,Monday,0,0,1,0.82
+E1023-20240607,2024-06-07,PRD-01,morning,OP-5691,INSP-20001,2024-06-07 08:43:11,INS-7741,99.98,0,0.0,0,False,No issues detected in batch. Meets all quality benchmarks.,Factory-E1,2024-06-07,0,Friday,0,0,0,0.145
+A2098-20240606,2024-06-06,PRD-02,afternoon,OP-2186,INSP-20002,2024-06-06 15:02:46,INS-1223,100.0,0,0.0,0,False,Batch quality is perfect. No defects found.,Factory-A2,2024-06-06,0,Thursday,0,0,0,0.325
+Z4042-20240607,2024-06-07,PRD-03,night,OP-0033,INSP-20003,2024-06-08 00:37:05,INS-9876,98.5,0,0.0,0,False,"Exceeded benchmarks, no visible defects.",Factory-Z3,2024-06-07,0,Friday,1,0,0,0.35
+Y7129-20240605,2024-06-05,PRD-04,afternoon,OP-7777,INSP-20004,2024-06-05 15:22:21,INS-7741,99.82,0,0.0,0,False,Batch passed all inspection criteria.,Factory-Y7,2024-06-05,0,Wednesday,0,0,0,0.13
+X0001-20240606,2024-06-06,PRD-01,morning,OP-0112,INSP-20005,2024-06-06 10:54:16,INS-8921,98.75,0,0.0,0,False,Batch quality is exceptional.,Factory-X0,2024-06-06,0,Thursday,0,0,0,0.26166666666666666
+G9234-20240606,2024-06-06,PRD-02,night,OP-2517,INSP-20006,2024-06-07 01:13:38,INS-2048,99.5,0,0.0,0,False,No defects detected. Excellent output.,Factory-G9,2024-06-06,0,Thursday,1,0,0,0.295
+E1785-20240607,2024-06-07,PRD-03,morning,OP-1674,INSP-20007,2024-06-07 09:22:41,INS-5467,100.0,0,0.0,0,False,Perfect batch. No issues detected.,Factory-E1,2024-06-07,0,Friday,0,0,0,0.12
+A2921-20240605,2024-06-05,PRD-04,afternoon,OP-0033,INSP-20008,2024-06-05 16:13:19,INS-1223,97.4,0,0.0,0,False,Exceeded benchmarks; batch ready for shipment.,Factory-A2,2024-06-05,0,Wednesday,0,0,0,0.385
+Z4578-20240604,2024-06-04,PRD-01,night,OP-2517,INSP-20009,2024-06-05 00:21:56,INS-7741,100.0,0,0.0,0,False,"Batch inspected, results are flawless.",Factory-Z3,2024-06-04,0,Tuesday,1,0,0,0.35
+Y7453-20240607,2024-06-07,PRD-02,morning,OP-5691,INSP-20010,2024-06-07 08:58:13,INS-2048,99.23,0,0.0,0,False,"No issues detected, batch is approved.",Factory-Y7,2024-06-07,0,Friday,0,0,0,0.08
+X0217-20240605,2024-06-05,PRD-03,afternoon,OP-2186,INSP-20011,2024-06-05 15:54:12,INS-5467,84.7,scratch,1.0,1,False,"Minor scratch noted, within tolerance.",Factory-X0,2024-06-05,0,Wednesday,0,0,1,0.76
+G9465-20240604,2024-06-04,PRD-04,morning,OP-5691,INSP-20012,2024-06-04 10:15:04,INS-7741,81.2,dent,1.0,2,False,"Small dent detected, still within acceptable range.",Factory-G9,2024-06-04,0,Tuesday,0,0,1,0.8
+E1122-20240606,2024-06-06,PRD-01,afternoon,OP-4178,INSP-20013,2024-06-06 15:11:17,INS-8921,76.8,marking,2.0,2,False,Spot marking observed; batch passes.,Factory-E1,2024-06-06,0,Thursday,0,0,1,0.775
+A2045-20240604,2024-06-04,PRD-02,morning,OP-0112,INSP-20014,2024-06-04 11:09:43,INS-2048,82.1,discoloration,1.0,1,False,"Minor discoloration noted, batch approved.",Factory-A2,2024-06-04,0,Tuesday,0,0,1,0.725
+Z4781-20240606,2024-06-06,PRD-03,afternoon,OP-2186,INSP-20015,2024-06-06 16:34:20,INS-7741,78.5,foreign_object,2.0,2,False,"Foreign object found, but batch passes.",Factory-Z3,2024-06-06,0,Thursday,0,0,1,0.865
+Y7714-20240607,2024-06-07,PRD-04,morning,OP-0033,INSP-20016,2024-06-07 09:43:29,INS-9876,80.3,marking,2.0,1,False,"Marking on surface, within tolerance.",Factory-Y7,2024-06-07,0,Friday,0,0,1,0.335
+X0374-20240604,2024-06-04,PRD-01,afternoon,OP-5691,INSP-20017,2024-06-04 15:37:49,INS-1223,79.6,scratch,1.0,1,False,"Surface scratch noted, batch passes.",Factory-X0,2024-06-04,0,Tuesday,0,0,1,0.745
+G9761-20240605,2024-06-05,PRD-02,afternoon,OP-7777,INSP-20018,2024-06-05 14:21:37,INS-7741,75.1,discoloration,2.0,2,False,"Discoloration observed, batch accepted.",Factory-G9,2024-06-05,0,Wednesday,0,0,1,0.85
+E1302-20240607,2024-06-07,PRD-03,morning,OP-2517,INSP-20019,2024-06-07 11:12:05,INS-5467,61.4,misalignment,3.0,4,True,Batch failed due to misalignment. Full rework required.,Factory-E1,2024-06-07,0,Friday,0,0,1,0.65
+A2441-20240606,2024-06-06,PRD-04,night,OP-2186,INSP-20020,2024-06-07 02:48:18,INS-2048,67.2,contamination,3.0,5,True,"Contamination detected, batch failed. Requires rework.",Factory-A2,2024-06-06,0,Thursday,1,0,1,0.96
+Z4982-20240605,2024-06-05,PRD-01,afternoon,OP-0112,INSP-20021,2024-06-05 14:23:59,INS-5467,55.9,mislabel,4.0,7,True,Mislabeling found. Full rework necessary.,Factory-Z3,2024-06-05,0,Wednesday,0,0,1,0.905
+Y7841-20240604,2024-06-04,PRD-03,night,OP-0033,INSP-20022,2024-06-05 02:22:46,INS-7741,69.3,cracking,3.0,5,True,"Cracking detected, rework required.",Factory-Y7,2024-06-04,0,Tuesday,1,0,1,0.945
+X0465-20240607,2024-06-07,PRD-04,night,OP-2517,INSP-20023,2024-06-08 01:16:44,INS-2048,62.5,contamination,3.0,6,True,"Contamination observed, batch failed. Rework needed.",Factory-X0,2024-06-07,0,Friday,1,0,1,0.88
+G9562-20240606,2024-06-06,PRD-01,afternoon,OP-2186,INSP-20024,2024-06-06 15:18:30,INS-8921,41.8,misalignment,4.0,9,True,Batch failed due to severe misalignment. Immediate rework required.,Factory-G9,2024-06-06,0,Thursday,0,0,1,0.9125
+E1435-20240605,2024-06-05,PRD-02,night,OP-1674,INSP-20025,2024-06-06 01:36:59,INS-7741,47.3,cracking,4.0,8,True,"Cracking detected, batch failed. Rework required.",Factory-E1,2024-06-05,0,Wednesday,1,0,1,0.945
+A2619-20240607,2024-06-07,PRD-03,afternoon,OP-5691,INSP-20026,2024-06-07 16:58:22,INS-5467,43.2,mislabel,3.0,10,True,Mislabeling issue. Batch requires full rework.,Factory-A2,2024-06-07,0,Friday,0,0,1,0.155
+Z5129-20240606,2024-06-06,PRD-04,night,OP-0112,INSP-20027,2024-06-07 01:23:41,INS-8921,2.7,major_crack,4.0,20,True,Complete failure. Batch must be discarded.,Factory-Z3,2024-06-06,0,Thursday,1,0,1,0.955
+Y7962-20240604,2024-06-04,PRD-01,night,OP-7777,INSP-20028,2024-06-05 00:06:12,INS-1223,0.0,major_crack,4.0,19,True,Batch must be discarded due to catastrophic failure.,Factory-Y7,2024-06-04,0,Tuesday,1,0,1,0.855
+X0598-20240607,2024-06-07,PRD-02,morning,OP-1674,INSP-20029,2024-06-07 10:40:17,INS-7741,3.1,cracking,4.0,18,True,Complete failure. Cracking is extensive.,Factory-X0,2024-06-07,0,Friday,0,0,1,0.07
+G9637-20240606,2024-06-06,PRD-03,afternoon,OP-0033,INSP-20030,2024-06-06 14:44:56,INS-5467,4.9,major_crack,4.0,16,True,Batch failed due to major crack. Discard recommended.,Factory-G9,2024-06-06,0,Thursday,0,0,1,0.825
+E1583-20240605,2024-06-05,PRD-04,morning,OP-5691,INSP-20031,2024-06-05 09:32:28,INS-7741,7.2,major_crack,4.0,17,True,Major crack detected. Batch is a total loss.,Factory-E1,2024-06-05,0,Wednesday,0,0,1,0.755
+A2784-20240607,2024-06-07,PRD-01,night,OP-2517,INSP-20032,2024-06-08 00:29:44,INS-5467,8.6,cracking,4.0,15,True,Severe cracking found. Batch failed.,Factory-A2,2024-06-07,0,Friday,1,0,1,0.875
+Z5263-20240606,2024-06-06,PRD-02,morning,OP-0033,INSP-20033,2024-06-06 11:45:53,INS-1223,92.4,0,0.0,0,False,"Batch inspected, results are excellent.",Factory-Z3,2024-06-06,0,Thursday,0,0,0,0.655
+Y8019-20240604,2024-06-04,PRD-03,morning,OP-0112,INSP-20034,2024-06-04 08:21:19,INS-9876,88.7,0,0.0,0,False,Batch meets all quality standards.,Factory-Y7,2024-06-04,0,Tuesday,0,0,0,0.075
+X0772-20240607,2024-06-07,PRD-04,afternoon,OP-1674,INSP-20035,2024-06-07 15:09:36,INS-8921,93.1,0,0.0,0,False,"Batch inspected, perfect results.",Factory-X0,2024-06-07,0,Friday,0,0,0,0.155
+G9781-20240606,2024-06-06,PRD-01,morning,OP-5691,INSP-20036,2024-06-06 08:56:41,INS-7741,85.3,0,0.0,0,False,No issues detected.,Factory-G9,2024-06-06,0,Thursday,0,0,0,0.345
+E1697-20240605,2024-06-05,PRD-02,afternoon,OP-4178,INSP-20037,2024-06-05 14:08:27,INS-1223,87.8,0,0.0,0,False,Batch passed; quality metrics high.,Factory-E1,2024-06-05,0,Wednesday,0,0,0,0.205
+A3074-20240607,2024-06-07,PRD-03,morning,OP-0033,INSP-20038,2024-06-07 09:55:11,INS-5467,90.9,0,0.0,0,False,Inspection complete; no defects.,Factory-A2,2024-06-07,0,Friday,0,0,0,0.455
+Z5471-20240606,2024-06-06,PRD-04,afternoon,OP-2186,INSP-20039,2024-06-06 16:25:32,INS-9876,95.8,0,0.0,0,False,Excellent batch; ready for shipment.,Factory-Z3,2024-06-06,0,Thursday,0,0,0,0.26
+Y8237-20240604,2024-06-04,PRD-01,morning,OP-0112,INSP-20040,2024-06-04 08:12:55,INS-8921,86.2,0,0.0,0,False,Batch meets all specifications.,Factory-Y7,2024-06-04,0,Tuesday,0,0,0,0.095
+X0961-20240605,2024-06-05,PRD-02,afternoon,OP-4178,INSP-20041,2024-06-05 15:05:16,INS-7741,89.4,0,0.0,0,False,All inspection criteria met.,Factory-X0,2024-06-05,0,Wednesday,0,0,0,0.195
+G9833-20240607,2024-06-07,PRD-03,morning,OP-5691,INSP-20042,2024-06-07 10:16:29,INS-5467,88.2,0,0.0,0,False,No defects detected.,Factory-G9,2024-06-07,0,Friday,0,0,0,0.07
+E1804-20240606,2024-06-06,PRD-04,afternoon,OP-2517,INSP-20043,2024-06-06 15:14:57,INS-7741,91.7,0,0.0,0,False,"Batch inspected, no issues.",Factory-E1,2024-06-06,0,Thursday,0,0,0,0.215
+A3265-20240604,2024-06-04,PRD-01,afternoon,OP-0033,INSP-20044,2024-06-04 14:51:14,INS-1223,86.9,0,0.0,0,False,Batch meets all standards.,Factory-A2,2024-06-04,0,Tuesday,0,0,0,0.385
+Z5651-20240607,2024-06-07,PRD-02,morning,OP-5691,INSP-20045,2024-06-07 09:59:46,INS-8921,87.3,0,0.0,0,False,No defects detected.,Factory-Z3,2024-06-07,0,Friday,0,0,0,0.16
+Y8492-20240606,2024-06-06,PRD-03,afternoon,OP-2517,INSP-20046,2024-06-06 16:13:39,INS-2048,76.2,scratch,2.0,2,False,"Minor scratch observed, batch is approved.",Factory-Y7,2024-06-06,0,Thursday,0,0,1,0.765
+X1106-20240604,2024-06-04,PRD-04,morning,OP-0033,INSP-20047,2024-06-04 10:39:03,INS-5467,79.8,dent,1.0,1,False,"Minor dent detected, batch passes.",Factory-X0,2024-06-04,0,Tuesday,0,0,1,0.68
+G9912-20240607,2024-06-07,PRD-01,afternoon,OP-2186,INSP-20048,2024-06-07 15:36:21,INS-7741,80.7,marking,2.0,1,False,"Marking found, batch accepted.",Factory-G9,2024-06-07,0,Friday,0,0,1,0.7258333333333334
+E1923-20240606,2024-06-06,PRD-02,morning,OP-0112,INSP-20049,2024-06-06 08:22:44,INS-2048,75.4,discoloration,2.0,2,False,"Minor discoloration, batch passes.",Factory-E1,2024-06-06,0,Thursday,0,0,1,0.32
+A3469-20240607,2024-06-07,PRD-03,afternoon,OP-0033,INSP-20050,2024-06-07 16:02:44,INS-5467,80.2,foreign_object,2.0,2,False,"Foreign object detected, batch approved.",Factory-A2,2024-06-07,0,Friday,0,0,1,0.795
+A3012-20240601,2024-06-01,PRD-01,morning,OP-5691,INSP-0001,2024-06-01 09:25:00,INS-3240,99.9,0,0.0,0,False,No issues detected. Batch meets all quality benchmarks.,Factory-E1,2024-06-01,0,Saturday,0,0,0,0.375
+B5120-20240601,2024-06-01,PRD-02,afternoon,OP-2186,INSP-0002,2024-06-01 15:10:00,INS-5648,77.6,scratch,1.0,1,False,"Minor scratch noted, within tolerance for PRD-02.",Factory-A2,2024-06-01,0,Saturday,0,0,1,0.89
+C1745-20240602,2024-06-02,PRD-03,night,OP-0033,INSP-0003,2024-06-03 01:47:00,INS-4178,48.1,misalignment,3.0,5,True,Batch failed due to misalignment. Requires full rework.,Factory-Z3,2024-06-02,0,Sunday,1,0,1,0.925
+D4567-20240602,2024-06-02,PRD-02,afternoon,OP-7777,INSP-0004,2024-06-02 16:15:00,INS-2517,84.2,marking,2.0,2,False,"Spot marking observed, does not affect batch performance.",Factory-Y7,2024-06-02,0,Sunday,0,0,1,0.84
+E3289-20240603,2024-06-03,PRD-04,morning,OP-0001,INSP-0005,2024-06-03 10:35:00,INS-0112,100.0,0,0.0,0,False,Perfect batch. No defects detected.,Factory-X0,2024-06-03,0,Monday,0,0,0,0.1025
+F1778-20240603,2024-06-03,PRD-01,afternoon,OP-1674,INSP-0006,2024-06-03 15:53:00,INS-3452,93.8,0,0.0,0,False,Exceeded benchmarks. Batch PRD-01 is exemplary.,Factory-G9,2024-06-03,0,Monday,0,0,0,0.15116666666666667
+G5762-20240604,2024-06-04,PRD-02,night,OP-2517,INSP-0007,2024-06-05 00:58:00,INS-5691,59.2,contamination,4.0,6,True,Contamination detected; batch must be reworked.,Factory-E1,2024-06-04,0,Tuesday,1,0,1,0.84
+H4893-20240604,2024-06-04,PRD-03,afternoon,OP-5691,INSP-0008,2024-06-04 16:02:00,INS-5648,78.3,dent,2.0,2,False,Minor dent noted but batch passes inspection.,Factory-A2,2024-06-04,0,Tuesday,0,0,1,0.745
+I6432-20240605,2024-06-05,PRD-04,morning,OP-0033,INSP-0009,2024-06-05 10:00:00,INS-4178,100.0,0,0.0,0,False,No issues detected in PRD-04 batch.,Factory-Z3,2024-06-05,0,Wednesday,0,0,0,0.575
+J2084-20240605,2024-06-05,PRD-01,afternoon,OP-2186,INSP-0010,2024-06-05 15:05:00,INS-2517,82.0,marking,1.0,1,False,"Light marking observed, batch passes.",Factory-Y7,2024-06-05,0,Wednesday,0,0,1,0.79
+K7182-20240606,2024-06-06,PRD-03,morning,OP-7777,INSP-0011,2024-06-06 10:18:00,INS-0112,98.8,0,0.0,0,False,"No defects, batch PRD-03 is acceptable.",Factory-X0,2024-06-06,0,Thursday,0,0,0,0.1
+L6302-20240606,2024-06-06,PRD-02,night,OP-1674,INSP-0012,2024-06-07 01:10:00,INS-3452,41.5,mislabel,3.0,8,True,"Mislabeling detected, batch failed and requires rework.",Factory-G9,2024-06-06,0,Thursday,1,0,1,0.89
+M4589-20240607,2024-06-07,PRD-04,afternoon,OP-5691,INSP-0013,2024-06-07 15:35:00,INS-5648,76.2,discoloration,2.0,1,False,"Minor discoloration, within tolerance.",Factory-E1,2024-06-07,0,Friday,0,0,1,0.68
+N1892-20240607,2024-06-07,PRD-01,morning,OP-2517,INSP-0014,2024-06-07 08:42:00,INS-5691,97.2,0,0.0,0,False,"Excellent batch, PRD-01 passed all checks.",Factory-A2,2024-06-07,0,Friday,0,0,0,0.105
+O5732-20240608,2024-06-08,PRD-02,afternoon,OP-0033,INSP-0015,2024-06-08 16:00:00,INS-4178,63.0,cracking,4.0,7,True,"Cracking detected, batch failed and sent for rework.",Factory-Z3,2024-06-08,0,Saturday,0,0,1,0.78625
+P9210-20240609,2024-06-09,PRD-04,morning,OP-2186,INSP-0016,2024-06-09 09:10:00,INS-2517,99.5,0,0.0,0,False,No issues. PRD-04 batch cleared for shipping.,Factory-Y7,2024-06-09,0,Sunday,0,0,0,0.03
+Q1834-20240609,2024-06-09,PRD-03,night,OP-7777,INSP-0017,2024-06-10 00:45:00,INS-0112,44.6,contamination,3.0,4,True,Contamination above acceptable levels; batch sent for rework.,Factory-X0,2024-06-09,0,Sunday,1,0,1,0.845
+R4675-20240610,2024-06-10,PRD-02,afternoon,OP-1674,INSP-0018,2024-06-10 15:30:00,INS-3452,88.4,0,0.0,0,False,"High quality batch, no defects found.",Factory-G9,2024-06-10,0,Monday,0,0,0,0.13333333333333333
+S2941-20240610,2024-06-10,PRD-01,morning,OP-5691,INSP-0019,2024-06-10 09:48:00,INS-5648,79.8,dent,2.0,2,False,"Minor dent observed, within quality tolerance.",Factory-E1,2024-06-10,0,Monday,0,0,1,0.66
+T8720-20240611,2024-06-11,PRD-03,afternoon,OP-2517,INSP-0020,2024-06-11 14:22:00,INS-5691,91.6,0,0.0,0,False,Batch PRD-03 meets all quality requirements.,Factory-A2,2024-06-11,0,Tuesday,0,0,0,0.22
+U5423-20240611,2024-06-11,PRD-04,night,OP-0033,INSP-0021,2024-06-12 00:30:00,INS-4178,4.7,major_crack,4.0,17,True,Complete failure. Batch must be discarded.,Factory-Z3,2024-06-11,0,Tuesday,1,0,1,0.84
+V9181-20240612,2024-06-12,PRD-02,afternoon,OP-2186,INSP-0022,2024-06-12 15:00:00,INS-2517,100.0,0,0.0,0,False,"Perfect batch, no issues detected.",Factory-Y7,2024-06-12,0,Wednesday,0,0,0,0.225
+W3615-20240612,2024-06-12,PRD-01,morning,OP-7777,INSP-0023,2024-06-12 11:45:00,INS-0112,86.5,0,0.0,0,False,Batch PRD-01 passed without defects.,Factory-X0,2024-06-12,0,Wednesday,0,0,0,0.17
+X5072-20240613,2024-06-13,PRD-04,afternoon,OP-1674,INSP-0024,2024-06-13 16:10:00,INS-3452,71.2,foreign_object,1.0,1,False,"Minor foreign object detected, batch approved.",Factory-G9,2024-06-13,0,Thursday,0,0,1,0.83
+Y6938-20240613,2024-06-13,PRD-03,night,OP-5691,INSP-0025,2024-06-14 02:05:00,INS-5648,58.9,cracking,3.0,5,True,"Cracking observed, batch requires rework.",Factory-E1,2024-06-13,0,Thursday,1,0,1,0.905
+Z4039-20240614,2024-06-14,PRD-02,afternoon,OP-2517,INSP-0026,2024-06-14 14:50:00,INS-5691,95.0,0,0.0,0,False,Batch PRD-02 meets all specs. No defects.,Factory-A2,2024-06-14,0,Friday,0,0,0,0.085
+A5016-20240614,2024-06-14,PRD-01,morning,OP-0033,INSP-0027,2024-06-14 09:35:00,INS-4178,80.4,discoloration,2.0,1,False,"Discoloration noted, batch approved.",Factory-Z3,2024-06-14,0,Friday,0,0,1,0.815
+B2783-20240615,2024-06-15,PRD-03,afternoon,OP-2186,INSP-0028,2024-06-15 14:35:00,INS-2517,67.3,misalignment,4.0,10,True,"Misalignment detected, batch failed.",Factory-Y7,2024-06-15,0,Saturday,0,0,1,0.665
+C5401-20240615,2024-06-15,PRD-04,morning,OP-7777,INSP-0029,2024-06-15 08:40:00,INS-0112,97.8,0,0.0,0,False,"No defects, batch passed.",Factory-X0,2024-06-15,0,Saturday,0,0,0,0.08
+D3094-20240616,2024-06-16,PRD-01,afternoon,OP-1674,INSP-0030,2024-06-16 15:15:00,INS-3452,86.7,0,0.0,0,False,Batch PRD-01 meets standards.,Factory-G9,2024-06-16,0,Sunday,0,0,0,0.1875
+E8257-20240616,2024-06-16,PRD-03,night,OP-5691,INSP-0031,2024-06-17 02:12:00,INS-5648,49.7,contamination,3.0,6,True,Batch requires rework due to contamination.,Factory-E1,2024-06-16,0,Sunday,1,0,1,0.98
+F6324-20240617,2024-06-17,PRD-02,afternoon,OP-2517,INSP-0032,2024-06-17 14:37:00,INS-5691,89.1,0,0.0,0,False,Batch PRD-02 cleared for shipment.,Factory-A2,2024-06-17,0,Monday,0,0,0,0.085
+G9310-20240617,2024-06-17,PRD-04,morning,OP-0033,INSP-0033,2024-06-17 10:10:00,INS-4178,74.5,scratch,1.0,2,False,"Minor scratch observed, batch passes.",Factory-Z3,2024-06-17,0,Monday,0,0,1,0.315
+H4281-20240618,2024-06-18,PRD-01,afternoon,OP-2186,INSP-0034,2024-06-18 16:00:00,INS-2517,99.1,0,0.0,0,False,"Batch meets all requirements, no defects.",Factory-Y7,2024-06-18,0,Tuesday,0,0,0,0.2825
+I9512-20240618,2024-06-18,PRD-03,morning,OP-7777,INSP-0035,2024-06-18 08:25:00,INS-0112,85.6,0,0.0,0,False,No issues detected in morning shift batch.,Factory-X0,2024-06-18,0,Tuesday,0,0,0,0.13
+J7810-20240619,2024-06-19,PRD-02,night,OP-1674,INSP-0036,2024-06-20 01:49:00,INS-3452,52.3,mislabel,3.0,5,True,"Batch failed due to mislabel, rework required.",Factory-G9,2024-06-19,0,Wednesday,1,0,1,0.96
+K4018-20240619,2024-06-19,PRD-01,afternoon,OP-5691,INSP-0037,2024-06-19 14:25:00,INS-5648,62.8,misalignment,4.0,8,True,"Misalignment detected, batch sent for rework.",Factory-E1,2024-06-19,0,Wednesday,0,0,1,0.645
+L2384-20240620,2024-06-20,PRD-03,morning,OP-2517,INSP-0038,2024-06-20 10:30:00,INS-5691,99.7,0,0.0,0,False,Batch PRD-03 rated excellent.,Factory-A2,2024-06-20,0,Thursday,0,0,0,0.1
+M6097-20240620,2024-06-20,PRD-04,afternoon,OP-0033,INSP-0039,2024-06-20 16:10:00,INS-4178,83.9,marking,2.0,1,False,"Minor marking noted in batch, within tolerance.",Factory-Z3,2024-06-20,0,Thursday,0,0,1,0.78
+N1839-20240621,2024-06-21,PRD-01,morning,OP-2186,INSP-0040,2024-06-21 09:10:00,INS-2517,100.0,0,0.0,0,False,"Perfect batch, no defects.",Factory-Y7,2024-06-21,0,Friday,0,0,0,0.14
+O8342-20240621,2024-06-21,PRD-03,night,OP-7777,INSP-0041,2024-06-22 01:30:00,INS-0112,98.2,0,0.0,0,False,Batch passed all inspections with high score.,Factory-X0,2024-06-21,0,Friday,1,0,0,0.325
+P3295-20240622,2024-06-22,PRD-02,afternoon,OP-1674,INSP-0042,2024-06-22 15:40:00,INS-3452,81.7,scratch,1.0,1,False,"Light scratch observed, batch passes.",Factory-G9,2024-06-22,0,Saturday,0,0,1,0.65
+Q5091-20240622,2024-06-22,PRD-04,morning,OP-5691,INSP-0043,2024-06-22 11:15:00,INS-5648,92.3,0,0.0,0,False,Batch PRD-04 is approved for shipment.,Factory-E1,2024-06-22,0,Saturday,0,0,0,0.18
+R2806-20240623,2024-06-23,PRD-01,afternoon,OP-2517,INSP-0044,2024-06-23 14:10:00,INS-5691,60.4,misalignment,4.0,9,True,"Severe misalignment detected, batch sent for rework.",Factory-A2,2024-06-23,0,Sunday,0,0,1,0.675
+S1935-20240623,2024-06-23,PRD-03,night,OP-0033,INSP-0045,2024-06-24 02:40:00,INS-4178,6.3,major_crack,4.0,19,True,Complete failure. Batch will be discarded.,Factory-Z3,2024-06-23,0,Sunday,1,0,1,0.925
+T8452-20240624,2024-06-24,PRD-04,morning,OP-2186,INSP-0046,2024-06-24 08:55:00,INS-2517,97.5,0,0.0,0,False,No defects found during inspection.,Factory-Y7,2024-06-24,0,Monday,0,0,0,0.075
+U3917-20240624,2024-06-24,PRD-01,afternoon,OP-7777,INSP-0047,2024-06-24 15:23:00,INS-0112,76.9,dent,2.0,1,False,"Minor dent found, batch passes.",Factory-X0,2024-06-24,0,Monday,0,0,1,0.7775
+V8093-20240625,2024-06-25,PRD-03,night,OP-1674,INSP-0048,2024-06-26 00:03:00,INS-3452,47.5,contamination,3.0,6,True,Batch failed due to contamination.,Factory-G9,2024-06-25,0,Tuesday,1,0,1,0.965
+W5076-20240625,2024-06-25,PRD-02,afternoon,OP-5691,INSP-0049,2024-06-25 14:57:00,INS-5648,98.2,0,0.0,0,False,Batch PRD-02 meets all benchmarks.,Factory-E1,2024-06-25,0,Tuesday,0,0,0,0.2
+X1834-20240626,2024-06-26,PRD-01,morning,OP-2517,INSP-0050,2024-06-26 11:13:00,INS-5691,100.0,0,0.0,0,False,"Exceptional batch, no defects.",Factory-A2,2024-06-26,0,Wednesday,0,0,0,0.1

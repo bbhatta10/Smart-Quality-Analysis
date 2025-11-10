@@ -1,0 +1,12 @@
+Feature,Importance
+quality_score,0.3890574142089341
+defect_count,0.30260523974172077
+inspection_delay,0.06235212027780492
+shift_morning,0.05979269192328625
+factory_location_Factory-Z3,0.05547197088060846
+factory_location_Factory-E1,0.03566151101808644
+shift_night,0.030889469298260815
+factory_location_Factory-Y7,0.02871943422728841
+factory_location_Factory-G9,0.026675562563365122
+factory_location_Factory-X0,0.008774585860644809
+prod_hour,0.0
