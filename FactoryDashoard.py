@@ -159,65 +159,7 @@ st.markdown("---")
 st.caption("© 2025 Smart Quality Control Dashboard | Built with Streamlit + Plotly")
 
 
-#####################
-# ===============================
-# 📘 Model 2: Severity Prediction
-# ===============================
-
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, confusion_matrix
-
-# Step 1️⃣: Filter rows with actual defects
-df_severe = df_clean[df_clean['has_defect'] == 1].copy()
-
-# Step 2️⃣: Create binary severity target (1 = severe defect)
-df_severe['is_severe'] = (df_severe['defect_severity'] >= 2).astype(int)
-
-# Check distribution
-print("Value counts for is_severe:")
-print(df_severe['is_severe'].value_counts())
-
-# Step 3️⃣: Choose features (you can adjust these)
-features = [
-    'quality_score', 'defect_count', 'prod_hour',
-    'inspection_delay', 'shift', 'factory_location'
-]
-
-# Encode categorical columns
-df_encoded = pd.get_dummies(df_severe[features], drop_first=True)
-
-# Step 4️⃣: Split data into train/test sets
-X_train, X_test, y_train, y_test = train_test_split(
-    df_encoded, df_severe['is_severe'], test_size=0.2, random_state=42
-)
-
-# Step 5️⃣: Train Random Forest model
-model = RandomForestClassifier(random_state=42)
-model.fit(X_train, y_train)
-
-# Step 6️⃣: Evaluate performance
-y_pred = model.predict(X_test)
-print("\n✅ Severity Model Performance:")
-print(classification_report(y_test, y_pred))
-print("Accuracy:", round(accuracy_score(y_test, y_pred) * 100, 2), "%")
-print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
-
-y_pred = model.predict(X_test)
-print("\n✅ Model Evaluation:")
-print(classification_report(y_test, y_pred))
-
-# Step 7️⃣: Save predictions for Tableau visualization
-df_severe.loc[X_test.index, 'predicted_severe'] = y_pred
-df_severe[['inspection_id', 'defect_severity', 'is_severe', 'predicted_severe']].to_csv(
-    "severity_predictions_for_tableau.csv", index=False
-)
-
-print("\n📂 File saved: severity_predictions_for_tableau.csv")
-# ===============================
-
-
+#
 
 # ========================================
 # 📘 Model 3: Quality Score Prediction
