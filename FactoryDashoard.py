@@ -165,62 +165,6 @@ st.caption("© 2025 Smart Quality Control Dashboard | Built with Streamlit + Plo
 # 📘 Model 3: Quality Score Prediction
 # ========================================
 
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-import numpy as np
-
-# Step 1️⃣: Prepare the dataset
-df_quality = df_clean.copy()
-
-# Drop rows with missing quality_score (if any)
-df_quality = df_quality.dropna(subset=['quality_score'])
-
-# Step 2️⃣: Choose features that may influence quality
-features = [
-    'defect_count', 'defect_severity', 'inspection_delay',
-    'prod_hour', 'shift', 'operator_id', 'factory_location'
-]
-
-# Step 3️⃣: Encode categorical features
-df_encoded = pd.get_dummies(df_quality[features], drop_first=True)
-
-# Step 4️⃣: Define target variable
-target = df_quality['quality_score']
-
-# Step 5️⃣: Split dataset into training and testing
-X_train, X_test, y_train, y_test = train_test_split(
-    df_encoded, target, test_size=0.2, random_state=42
-)
-
-# Step 6️⃣: Train the model
-model = RandomForestRegressor(random_state=42, n_estimators=200)
-model.fit(X_train, y_train)
-
-# Step 7️⃣: Make predictions
-y_pred = model.predict(X_test)
-
-# Step 8️⃣: Evaluate performance
-mae = mean_absolute_error(y_test, y_pred)
-mse = mean_squared_error(y_test, y_pred)
-rmse = np.sqrt(mse)
-r2 = r2_score(y_test, y_pred)
-
-print("\n✅ Quality Score Model Performance:")
-print(f"MAE  (Mean Absolute Error): {mae:.2f}")
-print(f"RMSE (Root Mean Squared Error): {rmse:.2f}")
-print(f"R²   (Model Fit): {r2:.3f}")
-
-# Step 9️⃣: Save predictions for Tableau
-df_quality.loc[X_test.index, 'predicted_quality_score'] = y_pred
-df_quality[['inspection_id', 'quality_score', 'predicted_quality_score']].to_csv(
-    "quality_predictions_for_tableau.csv", index=False
-)
-
-print("\n📂 File saved: quality_predictions_for_tableau.csv")
-# ================================
-
 
 # ================================================
 # 📊 Feature Importance (after training the model)
